@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-filename = 'safe-chicken.txt'
+filename = 'sakaja.txt'
 with open(filename) as f:
     contents = f.read()
     f.close()
@@ -31,4 +31,4 @@ df = pd.DataFrame(data, index= [0])
 ndf = pd.DataFrame(np.repeat(df.values, 3, axis=0))
 ndf.columns = df.columns
 
-print(ndf)
+#print(ndf)
